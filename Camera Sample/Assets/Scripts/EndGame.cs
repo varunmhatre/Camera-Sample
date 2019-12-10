@@ -13,8 +13,12 @@ public class EndGame : MonoBehaviour
             transform.parent.parent.GetComponent<NavMeshAgent>().isStopped = true;
             transform.parent.parent.GetComponent<NavMeshAgent>().velocity = new Vector3();
             transform.parent.GetChild(0).GetComponent<Animator>().SetTrigger("EndNow");
-            Camera.main.transform.GetChild(0).GetComponent<Animator>().enabled = true;
-            //Application.Quit();
+            Camera.main.transform.GetChild(0).gameObject.SetActive(true);  
         }
+    }
+
+    public void QuitGame()
+    {
+        Application.Quit();
     }
 }
