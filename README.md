@@ -1,6 +1,7 @@
 # Camera-Sample
 
-Project to showcase various camera effects
+Project to showcase various camera. <br>
+Feel free to check out the prototype in the Builds folder. effects
 <br><br>
 Topics:<br>
 a) 3D Math<br>
