@@ -9,7 +9,7 @@ b) Post Processing in Unity<br>
 c) Minor Animations<br>
 d) Minor TimeScale<br>
 <br>
-The main focus of this project was to create a Camera Controls script the provides fucntions to:<br>
+The main focus of this project was to create a Camera Controls script that provides the following fucntions:<br>
 https://github.com/varunmhatre/Camera-Sample/blob/master/Camera%20Sample/Assets/Scripts/CameraControl.cs <br>
 a) Follow player (or any target)<br>
 b) Lock on to a target that player is watching<br>
