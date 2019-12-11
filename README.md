@@ -3,12 +3,12 @@
 Project to showcase various camera effects. <br>
 Feel free to check out the prototype in the Builds folder.
 <br><br>
-Topics:<br>
+Concepts utilized:<br>
 a) 3D Math<br>
 b) Post Processing in Unity<br>
-c) Minor Animations<br>
-d) Minor NavMesh and NavMeshAgent<br>
-e) Minor TimeScale<br>
+c) Animations<br>
+d) NavMesh and NavMeshAgent<br>
+e) TimeScale<br>
 <br>
 The main focus of this project was to create a Camera Controls script that provides the following fucntions:<br>
 https://github.com/varunmhatre/Camera-Sample/blob/master/Camera%20Sample/Assets/Scripts/CameraControl.cs <br>
