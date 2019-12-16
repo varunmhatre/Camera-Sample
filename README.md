@@ -1,7 +1,8 @@
 # Camera-Sample
 
 Project to showcase various camera effects. <br>
-Feel free to check out the prototype in the Builds folder.
+Feel free to check out the prototype in the Builds folder or on YouTube:<br>
+https://www.youtube.com/watch?v=W0g725mkF7s
 <br><br>
 Concepts utilized:<br>
 a) 3D Math<br>
