@@ -1,5 +1,5 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿
+//I used a NavMesh to move the target around as it is being followed
 using UnityEngine.AI;
 using UnityEngine;
 

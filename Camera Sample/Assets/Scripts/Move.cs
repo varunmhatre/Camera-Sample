@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Move : MonoBehaviour
 {
@@ -9,6 +6,14 @@ public class Move : MonoBehaviour
     Vector3 camToPos;
     Quaternion camToRot;
 
+    private IFollowTarget _move;
+    [SerializeField] private Transform target;
+
+    private void Awake()
+    {
+        _move = GetComponent<IFollowTarget>();
+    }
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -23,6 +28,7 @@ public class Move : MonoBehaviour
     void Update()
     {
         KeyPress(Input.anyKey);
+        _move.Follow(target);
     }
 
     private void KeyPress(bool anyKey)
