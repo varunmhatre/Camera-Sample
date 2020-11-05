@@ -16,3 +16,5 @@ https://github.com/varunmhatre/Camera-Sample/blob/master/Camera%20Sample/Assets/
 a) Follow player (or any target)<br>
 b) Lock on to a target that player is watching<br>
 c) Detach camera and hover in the air, watiching player (or any target)
+
+Most recently I have added the functionalitly for the player to automatically follow the target
