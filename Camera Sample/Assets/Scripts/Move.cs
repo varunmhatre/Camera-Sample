@@ -18,7 +18,7 @@ public class Move : MonoBehaviour
     void Start()
     {
         if (speed == 0)
-            speed = 0.02f;
+            speed = 0.005f;
 
         camToRot.eulerAngles = new Vector3(10, 0, 0);
         camToPos = new Vector3(0, 0.2f, -0.5f);
@@ -27,11 +27,19 @@ public class Move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        KeyPress(Input.anyKey);
-        _move.Follow(target);
+        if (Input.anyKey)
+        {
+            KeyPress();
+        }
+        else
+        {
+            _move.Follow(target);
+        }
+
+        CameraControl.Follow(Camera.main.transform, transform, camToRot, camToPos);
     }
 
-    private void KeyPress(bool anyKey)
+    private void KeyPress()
     {
         //Key control
         if (Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.W))
@@ -54,7 +62,6 @@ public class Move : MonoBehaviour
             transform.Rotate(transform.up, speed * 100, Space.Self);
         }
 
-        CameraControl.Follow(Camera.main.transform, transform, camToRot, camToPos);
     }
 
 }
